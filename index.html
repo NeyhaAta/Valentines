@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Will you be my Valentine?</title>
+  <title>Do you love me?</title>
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -117,10 +117,11 @@
     }
 
     .fireworks {
-      width: min(380px, 90vw);
-      margin: 0 auto;
-      display: block;
-    }
+  width: min(260px, 80vw);
+  margin: 20px auto 0;
+  display: block;
+  border-radius: 16px;
+}
 
     @keyframes pop {
       from { transform: scale(.96); opacity: 0; }
@@ -171,15 +172,19 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>Omair, Will you be my Valentine?</h1>
+    <h1>Do you love me?</h1>
 
-    <section class="button-zone" id="zone">
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
-    </section>
+    <section class="result" id="result">
+  <h2>YAY! 🎉</h2>
+  <img
+    class="fireworks"
+    src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmhpa2szbzM3ZmxueGZ6ZmdyNnE3YnBhMmJtNmcxemcyN2ttMWk2eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qFmdpUKAFZ6rMobzzu/giphy.gif"
+    alt="Cute hugging cat"
+  />
+</section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">“No” seems a bit shy 😈</div>
+    <div class="hint" id="hint">You can't say no 🤭</div>
 
     <section class="result" id="result">
       <h2>YAY! 🎉</h2>
